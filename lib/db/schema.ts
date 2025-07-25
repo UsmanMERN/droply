@@ -22,7 +22,7 @@ export const files = pgTable("files", {
     // ownership
 
     userId: text('user_id').notNull(),
-    parentId: text("parent_id"),
+    parentId: uuid("parent_id"),
 
     // file/folder flags
 
